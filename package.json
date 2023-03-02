@@ -1,0 +1,23 @@
+{
+  "name": "tower-of-hanoi",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Kevin Huang",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha --no-timeouts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevwhuang/tower-of-hanoi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kevwhuang/tower-of-hanoi/issues"
+  },
+  "homepage": "https://github.com/kevwhuang/tower-of-hanoi#readme",
+  "dependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }
+}

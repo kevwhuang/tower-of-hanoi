@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+:root {
+    --bg1: #444;
+    --bg2: slategray;
+    --bg3: slateblue;
+    --fc1: #ddd;
+}
+
+body {
+    background-color: var(--bg1);
+    color: var(--fc1);
+    font-family: Montserrat, sans-serif;
+    overflow: hidden;
+}
+
+hr {
+    background-color: #000;
+    height: 0.5rem;
+}
+
+.background {
+    background-color: var(--fc1);
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* ============================================================================================== */
+
+header {
+    font-family: 'Cinzel Decorative', fantasy;
+    position: relative;
+}
+
+header button#rules {
+    background-color: var(--bg3);
+    color: var(--fc1);
+    font-size: max(1rem, 3vw);
+    letter-spacing: 1vw;
+    padding: 0.5rem calc(1rem - 1vw) 0.5rem 1rem;
+    position: absolute;
+    right: 0;
+}
+
+header button#rules:active {
+    opacity: 0.5;
+}
+
+header div {
+    font-size: max(1rem, 3vw);
+    left: calc(100% * 2 / 3);
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    transform: translate(calc(-100% * 2 / 3));
+}
+
+header div i {
+    background-color: var(--bg3);
+    border-radius: 100rem;
+    cursor: pointer;
+    font-size: max(1rem, 3vw) !important;
+    vertical-align: middle;
+}
+
+header div i:active {
+    opacity: 0.5;
+}
+
+header h1 {
+    cursor: pointer;
+    display: inline-block;
+    font-size: max(1rem, 3vw);
+    letter-spacing: 1vw;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+@media screen and (max-width:500px) {
+
+    header div {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:350px) {
+
+    header {
+        text-align: center;
+    }
+
+    header button#rules {
+        display: none;
+    }
+
+}
+
+/* ============================================================================================== */
+
+nav div {
+    background-color: var(--bg2);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    cursor: pointer;
+    float: left;
+    height: 2rem;
+    position: relative;
+    text-align: center;
+    width: calc(100% / 3);
+}
+
+nav div:active {
+    opacity: 0.5;
+}
+
+nav div:nth-child(1) {
+    border-left: none;
+}
+
+nav div:nth-child(3) {
+    border-right: none;
+}
+
+nav div i {
+    font-size: max(1rem, 2vw) !important;
+}
+
+nav div i,
+nav div p {
+    font-size: max(0.5rem, 1.5vw);
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+/* ============================================================================================== */
+
+aside div {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    float: left;
+    text-align: center;
+    width: calc(100% / 3);
+}
+
+aside div:first-child {
+    border-left: none;
+}
+
+aside div:last-child {
+    border-right: none;
+}
+
+aside div p {
+    font-size: max(0.5rem, 2vw);
+}
+
+aside div p:last-child {
+    font-size: max(0.5rem, 3vw);
+}
+
+/* ============================================================================================== */
+
+main {
+    min-height: 100vh;
+}
+
+main canvas {
+    float: left;
+    width: calc(100% / 3);
+}

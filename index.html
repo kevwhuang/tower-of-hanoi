@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+
+<head>
+
+    <title>Tower of Hanoi</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Kevin Huang">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1 id="copyright">Tower of Hanoi</h1>
+
+        <button id="rules">Rules</button>
+
+        <div>
+            <span id="difficulty">Disks: 2</span>
+            <i id="increase" class="material-symbols-outlined">arrow_upward</i>
+            <i id="decrease" class="material-symbols-outlined">arrow_downward</i>
+        </div>
+
+    </header>
+
+    <hr>
+
+    <nav>
+
+        <div id="mute">
+            <i id="volume" class="material-symbols-outlined">volume_up</i>
+        </div>
+
+        <div id="start">
+            <p>Start / Restart</p>
+        </div>
+
+        <div id="theme">
+            <p>Random Background</p>
+        </div>
+
+    </nav>
+
+    <hr>
+
+    <aside>
+
+        <div>
+            <p>Minimum Moves</p>
+            <p id="minimum">0</p>
+        </div>
+
+        <div>
+            <p>Moves Made</p>
+            <p id="counter">0</p>
+        </div>
+
+        <div>
+            <p>Time Elapsed</p>
+            <p id="stopwatch">0</p>
+        </div>
+
+        <div class="clearfix"></div>
+
+    </aside>
+
+    <hr>
+
+    <main>
+
+        <canvas id="rod1" draggable="false">Your browser does not support Canvas.</canvas>
+
+        <canvas id="rod2" draggable="false">Your browser does not support Canvas.</canvas>
+
+        <canvas id="rod3" draggable="false">Your browser does not support Canvas.</canvas>
+
+    </main>
+
+    <noscript>Your browser does not support scripts.</noscript>
+
+</body>
+
+</html>
